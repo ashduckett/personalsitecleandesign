@@ -12,29 +12,31 @@ body, div, ul, li, i {
 .nav-bar {
     width: 100%;
     height: 70px;
-    background: red;
+    background: black;
 }
             
 .inner-nav {
-    max-width: 940px;
+    max-width: 960px;
     height: 100%;
     background: black;
     margin: auto;
     line-height: 100%;
+    font-size: 0px;
 }
             
 .nav-links {
     list-style-type: none;
     float: right;
-    margin-right: 10px;
-
-    
+    background: black;
+    text-align: right;
+    width: 100%;
 }
             
 .nav-links li {
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
+    background: black;
 }
             
 .nav-links li a {
@@ -44,41 +46,23 @@ body, div, ul, li, i {
     text-decoration: none;
     color: white;
     width: 100%;
+    font-size: 16px;
 }
 
 
 
 @media screen and (max-width:959px) {
-    .nav-links li {
- 
-    background: black;
-    
-}
-    
     .nav-links {
-    float: left;
-    width: 100%;
-    text-align: right;
-    
+        text-align: right;
+    }
 
-}
     li.mnu-btn {
         display: inline-block;
     }
-
-.mobile-view {
-    display: block;
-}
-
-.hidden-mobile-view {
-    display: block;
-}
-
 }
 
 @media screen and (min-width:959px) {
     .nav-links li {
-        /* use a class instead coz !important is baddddd */
         display: inline-block; 
     }
     
